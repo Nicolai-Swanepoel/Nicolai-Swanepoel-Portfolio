@@ -1,28 +1,30 @@
 * {
-    margin: 0;
+  margin: 0;
 }
 
 body {
-    background-image: url(images/backgroundhome.jpg);
-    background-position: center center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url(images/bg-home.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 ul {
-    display: flex;
-    justify-content: center;
-    color: white;
-    padding: 25px 36px;
-    text-decoration: none;
-    background-color: #333;
-    list-style-type: none;
+  color: white;
+  padding: 25px 36px;
+  text-decoration: none;
+  background-color: #333;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
 }
 
+ul li {
+  padding: 5px 10px;
+}
 
 li a {
-  display: inline-block;
   color: #fff;
   font-family: monospace;
   padding: 10px 20px;
@@ -30,96 +32,136 @@ li a {
   font-size: 30px;
 }
 
-.nav-logo { 
-    width: 50px;
-    height: 50px; 
-    padding-top: 5px;
-    padding-right: 40px;
+i {
+  text-decoration: none;
+  -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  font-size: 40px;
+}
+
+.nav-logo {
+  width: 50px;
+  height: 50px;
+  padding-top: 5px;
+  padding-right: 40px;
 }
 
 li a:hover {
-    background-color: #111;
-}	
+  background-color: #111;
+}
 
 h1 {
-    color: black;
-    font-size: 40px;
-	text-align: center;
-    font-weight: bold;
-} 
-	h2 {
-	color: black;
-	text-align: center;
-    font-size: 28px;
-	}
-	p { 
-    color: white;
-	text-align: center;
-    font-size: 20px;
-    font-family: "Constantia", "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+  font-size: 40px;
+  text-align: center;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+h2 {
+  text-align: center;
+  font-size: 32px;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+h3 {
+  text-align: center;
+  font-size: 32px;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+p {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Constantia", "Lucida Bright", "DejaVu Serif", Georgia, "serif";
 }
 footer {
-   position:absolute;
-   bottom:0;
-   width:100%;
-   height:60px;
-   background-color: #333;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #333;
 }
 
 .footer {
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
 }
 
-@media (max-width: 767px) {
-    body {
-        background-image: url(images/mobile-bg.jpg);
-        background-position: center center;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
-    }
+@media (max-width: 414px) {
+  body {
+    background-image: url(images/bg_mobi.jpg);
+    background-size: cover;
+    background-position: center top;
+  }
 
-    h1 {
-        
-        color: white;
-        font-size: 50px;
-    }
+  h1 {
+    font-size: 50px;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 
-    h2 {
-        color: white;
-        font-size: 40px;
+  h2 {
+    font-size: 40px;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
 
-    }
+  h3 {
+    font-size: 35px;
+    font-weight: bold;
+  }
 
-    ul {
-        width: 100%;
-    }
+  ul {
+    width: 100%;
+  }
 
-    ul li a {
-        padding-top: 17px;
-        text-align: center;
-    }
+  li {
+  }
 
-    .nav-logo {
-        display: none;
-    }
-
-    footer {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        background-color: #333;
-        color: white;
-        text-align: center;
-    }
-
-    .footer {
-    display: none;
-    padding-top: 20px;
+  ul li a {
     padding-right: 60px;
-    }
+    display: flex;
+    justify-content: center center;
+  }
+
+  .nav-logo {
+    padding-top: 14px;
+    display: none;
+  }
+
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+  }
+
+  .footer {
+    display: none;
+    padding-right: 60px;
+  }
+}
+
+@media (max-width: 414px) {
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 32px;
+  }
 }
